@@ -18,4 +18,29 @@
 # print(Thing2)
 
 
+# 10.3
+# class Thing3:
+#     def __init__(self, letters):
+#         self.letters = letters
+#
+# cat = Thing3('xyz')
+# print(cat.letters)
 
+# class Element:
+#     def __init__(self,name):
+#         self.__name__ = name
+# name = Element('Hydrogen')
+
+
+class element():
+    def __init__(self, name, symbol, number):
+        self.__name__=name
+        self.__symbol__=symbol
+        self.__number__=number
+
+    def __str__(self):
+        f = ('Hydrogen', 'H', 1)
+        return ('Hydrogen', 'H', 1)
+
+inst = element('Hydrogen', 'H', 1)
+print(inst)
